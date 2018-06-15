@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\Build\TurnDirectorDebug\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -62,8 +62,9 @@
   <ItemGroup>
     <Content Include="mod.json" />
   </ItemGroup>
+  <Import Project="..\..\..\..\Utils\Utils.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /YE "$(TargetDir)*.*" "C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\YOURMOD\"</PostBuildEvent>
+    <PostBuildEvent>xcopy /YE "$(TargetDir)*.*" "C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\TurnDirectorDebug\"</PostBuildEvent>
   </PropertyGroup>
 </Project>

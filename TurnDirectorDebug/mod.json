@@ -1,11 +1,11 @@
 ﻿{
-    "Name": "MyMod",
+    "Name": "TurnDirectorDebug",
     "Enabled": true,
 
     "Version": "0.1.0",
-    "Description": "",
+    "Description": "Debugging TurnDirector and continue or break flow instead of hanging",
     "Author": "FlukeyFiddler",
-    "Website": "http://www.github.com/FlukeyFiddler/MyMod",
-    "DLL": "MyMod.dll",
+    "Website": "http://www.github.com/FlukeyFiddler/TurnDirectorDebug",
+    "DLL": "TurnDirectorDebug.dll",
     "Settings": {}
 }

@@ -10,7 +10,7 @@ namespace nl.flukeyfiddler.bt.TurnDirectorDebug
     {
         public static void Init(string modDirectory, string settingsJSON)
         {
-            var harmony = HarmonyInstance.Create("nl.flukeyfiddler.bt.MyMod");
+            var harmony = HarmonyInstance.Create("nl.flukeyfiddler.bt.TurnDirectorDebug");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
 
